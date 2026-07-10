@@ -1,17 +1,31 @@
-#include<stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    if(n==1)
+#include <stdio.h>
+
+int main()
+{
+    int t;
+    scanf("%d", &t);
+
+    while (t--)
     {
-        printf("neither prime nor composite");
-    }
-    
-    for(int i=2; i<n; i++){
-        if(n%i==0){
-        printf("not prime");
-            break;
+        int x;
+        scanf("%d", &x);
+
+        int prime = 1;
+
+        for (int i = 2; i * i <= x; i++)
+        {
+            if (x % i == 0)
+            {
+                prime = 0;
+                break;
+            }
         }
+
+        if (prime == 1)
+            printf("%d eh primo\n", x);
+        else
+            printf("%d nao eh primo\n", x);
     }
-    printf("prime ");
+
+    return 0;
 }
