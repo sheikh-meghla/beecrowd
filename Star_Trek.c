@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include<stdlib.h>
 
 int main() {
     int n;
     scanf("%d", &n);
 
-    long long star[n];
-    int visited[n];
+    long long *star = (long long *)malloc(n * sizeof(long long));
+    int *visited = (int *)calloc(n, sizeof(int));
 
     long long sum = 0;
 
@@ -32,10 +33,14 @@ int main() {
             sum--;
         }
 
-        if (sheep % 2 == 1)
+        if (sheep % 2 == 1){
             pos++;
-        else
+        }
+            
+        else{
             pos--;
+        }
+            
     }
 
     printf("%d %lld\n", attacked, sum);
