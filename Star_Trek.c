@@ -5,8 +5,10 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    long long *star = (long long *)malloc(n * sizeof(long long));
-    int *visited = (int *)calloc(n, sizeof(int));
+    long long star[n];
+
+    int visited[n];
+    
 
     long long sum = 0;
 

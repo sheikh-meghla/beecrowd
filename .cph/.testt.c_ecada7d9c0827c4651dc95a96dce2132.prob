@@ -1,0 +1,1 @@
+{"name":"Local: testt","url":"c:\\Users\\sheik\\meghla\\beecrowd\\testt.c","tests":[{"id":1783906832820,"input":"9 1 8 2 8 7 3 1 2 3","output":"9 8 7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\testt.c","group":"local","local":true}
