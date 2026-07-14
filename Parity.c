@@ -3,21 +3,21 @@
 
 int main()
 {
-    char s[105];
-    scanf("%s", s);
+    char ch[105];
+    scanf("%s", ch);
 
     int count = 0;
-    int len = strlen(s);
+    int len = strlen(ch);
 
     for (int i = 0; i < len; i++)
     {
-        if (s[i] == '1')
+        if (ch[i] == '1')
         {
             count++;
         }
     }
 
-    printf("%s", s);
+    printf("%s", ch);
 
     if (count % 2 == 0)
     {
