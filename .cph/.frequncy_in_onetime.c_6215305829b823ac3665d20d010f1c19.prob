@@ -1,0 +1,1 @@
+{"name":"Local: frequncy_in_onetime","url":"c:\\Users\\sheik\\meghla\\beecrowd\\frequncy_in_onetime.c","tests":[{"id":1784202506614,"input":"10\n1 2 3 2 4 5 1 6 5 7","output":"3\n4\n6\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\frequncy_in_onetime.c","group":"local","local":true}
