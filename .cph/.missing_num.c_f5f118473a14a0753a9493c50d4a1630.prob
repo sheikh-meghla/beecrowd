@@ -1,0 +1,1 @@
+{"name":"Local: missing_num","url":"c:\\Users\\sheik\\meghla\\beecrowd\\missing_num.c","tests":[{"id":1784202881186,"input":"8\n0 2 2 4 7 9 7 4","output":"1\n3\n5\n6\n8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\missing_num.c","group":"local","local":true}
