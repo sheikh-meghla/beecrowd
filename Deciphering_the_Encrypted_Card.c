@@ -5,51 +5,52 @@
 int main() {
 
     int c, n;
-    while (scanf("%d %d", &c, &n) == 2) {
-        getchar();
-        char a[25], b[25];
-        fgets(a, sizeof(a), stdin);
-        fgets(b, sizeof(b), stdin);
 
-        a[strcspn(a, "\n")] = '\0';
-        b[strcspn(b, "\n")] = '\0';
-        for (int i = 0; i < n; i++){
+    scanf("%d %d",&c,&n);
 
-            char s[1005];
-            fgets(s, sizeof(s), stdin);
-            for (int j = 0; s[j] != '\0'; j++) {
-                for (int k = 0; k < c; k++) {
-                    if (s[j] == a[k]) {
-                        s[j] = b[k];
-                        break;
-                    }
-                    if (s[j] == b[k]) {
-                        s[j] = a[k];
-                        break;
-                    }
-                    if (isalpha(s[j]) && isalpha(a[k]) && tolower(s[j]) == tolower(a[k])) {
-                        if (isupper(s[j]))
-                            s[j] = toupper(b[k]);
-                        else
-                            s[j] = tolower(b[k]);
-                        break;
-                    }
+    char key1[n+1];
+    char key2[n+1];
 
-                    if (isalpha(s[j]) && isalpha(b[k]) && tolower(s[j]) == tolower(b[k])) {
-                        if (isupper(s[j]))
-                            s[j] = toupper(a[k]);
-                        else
-                            s[j] = tolower(a[k]);
-                        break;
-                    }
-                }
+    scanf("%s",key1);
+    // printf("%s\n",key1);
+    scanf("%s",key2);
+    // printf("%s\n",key2);
+
+    char s[1001];
+
+    getchar();
+    for(int i=0;i<3;i++){
+        gets(s);
+
+        int len = strlen(s);
+        
+        for(int j = 0;j<len;j++){
+            if(s[i] == 'Z'){
+                s[i] = 'P';
+            }
+            if(s[i] == 'E'){
+                s[i] = 'O';
+            }
+            if(s[i] == 'N'){
+                s[i] = 'L';
             }
 
-            printf("%s", s);
+            if(s[i] == 'I'){
+                s[i] = 'A';
+            }
+
+            if(s[i] == 'T'){
+                s[i] = 'R';
+            }
+            
         }
 
-        printf("\n");
+        printf("%s\n",s);
+        
     }
+
+    
+
 
     return 0;
 }
