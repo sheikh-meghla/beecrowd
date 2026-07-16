@@ -1,0 +1,1 @@
+{"name":"Local: reverse_arr","url":"c:\\Users\\sheik\\meghla\\beecrowd\\reverse_arr.c","tests":[{"id":1784205891532,"input":"6\n10 20 30 40 50 60","output":"60 50 40 30 20 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\reverse_arr.c","group":"local","local":true}
