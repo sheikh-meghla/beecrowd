@@ -1,0 +1,1 @@
+{"name":"Local: remov_duplicate_value","url":"c:\\Users\\sheik\\meghla\\beecrowd\\remov_duplicate_value.c","tests":[{"id":1784207107624,"input":"8\n1 1 2 2 3 4 4 5","output":"1 2 3 4 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\remov_duplicate_value.c","group":"local","local":true}
