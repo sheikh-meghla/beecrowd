@@ -6,7 +6,7 @@ int main()
     scanf("%d",&n);
 
     int a[n];
-    int freq[101]={0};
+    int freq[10]={0};
 
     for(int i=0;i<n;i++)
     {
@@ -18,7 +18,7 @@ int main()
         freq[a[i]]++;
     }
 
-    for(int i=0;i<=100;i++)
+    for(int i=0;i<=10;i++)
     {
         if(freq[i]!=0)
         {

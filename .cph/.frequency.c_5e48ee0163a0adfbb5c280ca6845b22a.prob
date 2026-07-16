@@ -1,0 +1,1 @@
+{"name":"Local: frequency","url":"c:\\Users\\sheik\\meghla\\beecrowd\\frequency.c","tests":[{"id":1784199315310,"input":"7\n1 4 2 1 4 4 2\n4","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\frequency.c","group":"local","local":true}
