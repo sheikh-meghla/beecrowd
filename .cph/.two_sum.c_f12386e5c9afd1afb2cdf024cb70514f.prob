@@ -1,0 +1,1 @@
+{"name":"Local: two_sum","url":"c:\\Users\\sheik\\meghla\\beecrowd\\two_sum.c","tests":[{"id":1784206753934,"input":"7\n1 2 3 4 6 8 10\n10","output":"2 8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\two_sum.c","group":"local","local":true}
