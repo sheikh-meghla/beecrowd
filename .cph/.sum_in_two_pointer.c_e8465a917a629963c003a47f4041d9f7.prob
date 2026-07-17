@@ -1,0 +1,1 @@
+{"name":"Local: sum_in_two_pointer","url":"c:\\Users\\sheik\\meghla\\beecrowd\\sum_in_two_pointer.c","tests":[{"id":1784289969604,"input":"6\n-1 0 1 2 -1 -4","output":"-1 -1 2\n-1 0 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\sum_in_two_pointer.c","group":"local","local":true}
