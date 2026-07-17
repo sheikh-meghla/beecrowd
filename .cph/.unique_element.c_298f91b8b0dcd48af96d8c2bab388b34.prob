@@ -1,0 +1,1 @@
+{"name":"Local: unique_element","url":"c:\\Users\\sheik\\meghla\\beecrowd\\unique_element.c","tests":[{"id":1784288139826,"input":"7\n1 1 2 2 3 4 4","output":"4\n1 2 3 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\unique_element.c","group":"local","local":true}
