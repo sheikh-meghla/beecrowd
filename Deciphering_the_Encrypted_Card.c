@@ -2,55 +2,76 @@
 #include <string.h>
 #include <ctype.h>
 
-int main() {
+int main()
+{
+    int C, N;
 
-    int c, n;
+    while (scanf("%d %d%*c", &C, &N) == 2)
+    {
+        char key1[30], key2[30];
 
-    scanf("%d %d",&c,&n);
+        fgets(key1, sizeof(key1), stdin);
+        fgets(key2, sizeof(key2), stdin);
 
-    char key1[n+1];
-    char key2[n+1];
+        key1[strcspn(key1, "\n")] = '\0';
+        key2[strcspn(key2, "\n")] = '\0';
 
-    scanf("%s",key1);
-    // printf("%s\n",key1);
-    scanf("%s",key2);
-    // printf("%s\n",key2);
+        char mp[256];
 
-    char s[1001];
+        // Initialize the mapping array to itself
+        for (int i = 0; i < 256; i++)
+            mp[i] = i;
 
-    getchar();
-    for(int i=0;i<3;i++){
-        gets(s);
+        for (int i = 0; i < C; i++)
+            {
+            unsigned char a = key1[i];
+            unsigned char b = key2[i];
 
-        int len = strlen(s);
-        
-        for(int j = 0;j<len;j++){
-            if(s[i] == 'Z'){
-                s[i] = 'P';
+            if (isalpha(a) && isalpha(b))
+            {
+                mp[tolower(a)] = tolower(b);
+                mp[toupper(a)] = toupper(b);
+                mp[tolower(b)] = tolower(a);
+                mp[toupper(b)] = toupper(a);
             }
-            if(s[i] == 'E'){
-                s[i] = 'O';
+            else if (isalpha(a))
+            {
+                // Both cases of 'a' map to the non-letter 'b'
+                mp[tolower(a)] = b;
+                mp[toupper(a)] = b;
+                // The non-letter 'b' maps to the lowercase of 'a'
+                mp[b] = tolower(a);
             }
-            if(s[i] == 'N'){
-                s[i] = 'L';
+            else if (isalpha(b))
+            {
+                // Both cases of 'b' map to the non-letter 'a'
+                mp[tolower(b)] = a;
+                mp[toupper(b)] = a;
+                // The non-letter 'a' maps to the lowercase of 'b'
+                mp[a] = tolower(b);
             }
-
-            if(s[i] == 'I'){
-                s[i] = 'A';
+            else
+            {
+                // Both are non-letters
+                mp[a] = b;
+                mp[b] = a;
             }
-
-            if(s[i] == 'T'){
-                s[i] = 'R';
-            }
-            
         }
 
-        printf("%s\n",s);
-        
+        char s[1005];
+
+        while (N--)
+        {
+            fgets(s, sizeof(s), stdin);
+
+            for (int i = 0; s[i]; i++)
+                s[i] = mp[(unsigned char)s[i]];
+
+            printf("%s", s);
+        }
+
+        printf("\n");
     }
-
-    
-
 
     return 0;
 }
