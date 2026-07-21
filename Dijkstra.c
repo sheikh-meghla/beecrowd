@@ -8,7 +8,7 @@ int unique_count = 0;
 int main() {
     char current_jewel[100000]; 
 
-    while (scanf("%99999s", current_jewel) != EOF) {
+    while (scanf("%s", current_jewel) != EOF) {
         int already_exists = 0;
 
         for (int i = 0; i < unique_count; i++) {
