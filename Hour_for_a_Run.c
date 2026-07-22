@@ -2,21 +2,17 @@
 
 int main()
 {
-    int v, n;
-    scanf("%d %d", &v, &n);
+    long long v, n;
+    scanf("%lld %lld", &v, &n);
 
-    int total = v * n;
+    long long total = v * n;
 
-    for(int i = 10; i <= 90; i += 10)
+    for (int i = 1; i <= 9; i++)
     {
-        int ans = (total * i + 99) / 100;
+        printf("%lld", (total * i + 9) / 10);
 
-        printf("%d", ans);
-
-        if(i != 90)
-        {
+        if (i != 9)
             printf(" ");
-        }
     }
 
     printf("\n");
