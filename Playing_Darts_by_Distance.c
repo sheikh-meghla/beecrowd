@@ -1,41 +1,26 @@
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
-    int t;
-    scanf("%d", &t);
+    int T;
+    scanf("%d", &T);
 
-    while (t--)
+    while (T--)
     {
-        long long joao = 0, maria = 0;
+        int joao = 0, maria = 0;
 
         for (int i = 0; i < 3; i++)
         {
-            long long x, d;
-            scanf("%lld %lld", &x, &d);
-
-            long long score = 1;
-            for (int j = 0; j < d; j++)
-            {
-                score *= x;
-            }
-
-            joao += score;
+            int x, d;
+            scanf("%d %d", &x, &d);
+            joao += x * d;
         }
 
         for (int i = 0; i < 3; i++)
         {
-            long long x, d;
-            scanf("%lld %lld", &x, &d);
-
-            long long score = 1;
-            for (int j = 0; j < d; j++)
-            {
-                score *= x;
-            }
-
-            maria += score;
+            int x, d;
+            scanf("%d %d", &x, &d);
+            maria += x * d;
         }
 
         if (joao > maria)
