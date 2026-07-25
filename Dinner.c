@@ -3,6 +3,7 @@ int main(){
 
     int man,meet_year;
     scanf("%d %d",&man,&meet_year);
+    
     int man_1, man_2, year_1;
     scanf("%d %d %d",&man_1,&man_2,&year_1);
     meet_year = meet_year - 1;
