@@ -3,14 +3,14 @@
 using namespace std;
 int main()
 {
-    int t;
+    long long int t;
     cin >> t;
     while (t--)
     {
-        int n;
+        long long int n;
         cin >> n;
 
-        int x = (-1 + (sqrt(1+8*n)))/2;          
+        long long int x = (-1 + (sqrt(1+8*n)))/2;          
         cout << x << endl;
  
         }
