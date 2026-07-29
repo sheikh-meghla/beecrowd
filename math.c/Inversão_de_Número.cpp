@@ -5,11 +5,11 @@ int main() {
     int n;
     cin >> n;
 
-    int ones = n % 10;
-    int tens = (n / 10) % 10;
-    int hundreds = n / 100;
+    int x = n % 10;
+    int ans = (n / 10) % 10;
+    int ans1 = n / 100;
 
-    int reversed = ones * 100 + tens * 10 + hundreds;
+    int reversed = x * 100 + ans * 10 + ans1;
 
     cout << "Invertido = " << reversed << "\n";
 
