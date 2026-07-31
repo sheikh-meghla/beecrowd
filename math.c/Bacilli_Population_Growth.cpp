@@ -28,7 +28,7 @@ void solve() {
 }
 
 int main() {
-;
+
 
     precompute();
 
