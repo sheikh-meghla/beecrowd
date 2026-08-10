@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"c:\\Users\\sheik\\meghla\\beecrowd\\string\\test.cpp","tests":[{"id":1786204452811,"input":"3\nbangladesh..is..my..mother..land\n...li.is..my.mother\n.is.my..mother.land.","output":"bimml\nlimm\nimml"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sheik\\meghla\\beecrowd\\string\\test.cpp","group":"local","local":true}
