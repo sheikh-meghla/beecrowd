@@ -4,28 +4,12 @@ using namespace std;
 
 int main() {
 
-    int t;
-    cin >> t;
-    while (t--)
-    {
+    string sentence;
+    cin >> sentence;
 
-        cin.ignore();
-        string s;
-        getline(cin,s);
-        stringstream ss(s);
+    remove(sentence.begin(),sentence.end(),',');
 
-        string word;
-
-        while(ss >> word) {
-            cout << word << endl;
-        }
-
-        
-
-
-        
-        // cout << s << endl;
-    }
+    cout << sentence << endl;
     
     
     return 0;
