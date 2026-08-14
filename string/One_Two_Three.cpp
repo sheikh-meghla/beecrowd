@@ -16,7 +16,7 @@ int main() {
             int one = 0, two = 0;
 
             for (int i = 0; i < 3; i++) {
-                if (s[i] == "one"[i])
+                if (s[i] == "one"[i])  
                 {
                     one++;
                 }
@@ -26,13 +26,13 @@ int main() {
                 }
             }
 
-            if (one >= 2)
+            if (two >= 2)
             {
-                cout << 1 << endl;
+                cout << 2 << endl;
             }
             else
             {
-                cout << 2 << endl;
+                cout << 1 << endl;
             }
         }
     }
